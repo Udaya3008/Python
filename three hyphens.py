@@ -1,0 +1,13 @@
+def move_hyphens(s):
+    if s is None:
+        return None
+    hyphens=s.count('-')
+    result='-'*hyphens
+    for ch in s:
+        if ch!='-':
+            result+=ch
+            return result
+#Test
+s=input("enter string:")
+print("Original:",s)
+print("Modified:",move_hyphens(s))
